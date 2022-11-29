@@ -3,22 +3,22 @@ from django.contrib.auth.models import User
 from django.db.models.signals import post_save
 from django.dispatch import receiver
 
-class User(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+class Customer(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
     name = models.TextField()
     lastname = models.TextField() 
-    image = models.ImageField(upload_to="user", null=True)
+    image = models.ImageField(upload_to="Customers", null=True)
 
 
-    def __str__(self) -> str:
+    def __str__(self) -> str: 
         return self.name + ' ' + self.lastname
 
 
 @receiver(post_save, sender=User)
 def create_user_profile(sender, instance, created, **kwargs):
     if created:
-        User.objects.create(user=instance)
+        Customer.objects.create(user=instance)
 
 @receiver(post_save, sender=User)
 def save_user_profile(sender, instance, **kwargs):
-    instance.profile.save()
+    instance.customer.save()
