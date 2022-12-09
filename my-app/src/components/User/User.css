@@ -1,0 +1,39 @@
+.user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    margin-top: 60px;
+    padding: 0 50px 10px 50px;
+}
+
+.user div {
+    margin-top: 40px;
+}
+
+.user_item {
+    font-size: 140%;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.photo {
+    max-width: 20vh;
+    max-height: 20vh;
+}
+
+.to_blog {
+    font-size: 140%;
+    font-weight: bold;
+    margin: 15px;
+    color: black;
+    outline: auto;
+    padding: 5px;
+}
+.to_blog:hover {
+    color: rgba(0, 0, 0, 0.7);
+}
