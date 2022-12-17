@@ -11,14 +11,19 @@ export function FriendItem(props) {
             setUser(data)
         })
     }, [])
+
     return (
         user.user && (
             <>
-                <div className="friend">
-                    {user.user.username}
-                    <img className="image" src={user.image} alt="user_photo" />
+                <img className="image" src={user.image} alt="user_photo" />
+                <div className="text">
+                    {user.user.username +
+                        ' ' +
+                        user.user.first_name +
+                        ' ' +
+                        user.user.last_name}
                 </div>
-            </> 
+            </>
         )
     )
 }
