@@ -6,21 +6,29 @@
 }
 
 .friend {
+    float: right;
     font-weight: bold;
-    font-size: 140%;
+    font-size: 150%;
     color: black;
-    margin-top: 40px;
     background-color: white;
-    border-radius: 2px;
-    padding-bottom: 20px;
+    width: 550px;
+    margin-top: 20px;
+    right: 0;
+    border-radius: 3px;
 }
+
+.text {
+    padding-left: 10vh;
+    padding-top: 2.5vh;
+}
+
 .image {
-    position: absolute;
-    margin-left: 30px;
-    width: 4%;
-    height: 6%;
-    border-radius: 2px;
+    float: left;
+    width: 7vh;
+    height: 8vh;
+    border-radius: 3px 0 0 3px;
 }
+
 .settings-aside {
     margin-top: 40px;
     text-align: center;
@@ -52,7 +60,6 @@
 
 .settings_error {
     text-align: center;
-
     font-size: 140%;
     color: #194d6a;
 }
