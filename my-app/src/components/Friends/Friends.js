@@ -32,7 +32,7 @@ export function Friends() {
             setUserName(event.target.value)
             setUserNameError('')
         } else {
-            setUserNameError('Логин не должен быть длиннее 20 символов')
+            setUserNameError('Логин не должен быть длиннее 30 символов')
         }
     }
     const onSubmitFriend = (event) => {
@@ -43,26 +43,26 @@ export function Friends() {
         } else if (event.target.value.length > 30) {
             event.preventDefault()
         } else {
+            var friend
             ajaxService('/customers/').then((data) => {
-                setUsers(data)
+                friend = data.filter((user) => username == user.user.username)
+                if (friend.length == 0) {
+                    setUserNameError('Пользователь не найден')
+                    event.preventDefault()
+                } else {
+                    ajaxService(`/friends/`, {
+                        method: 'POST',
+                        body: JSON.stringify({
+                            userId: user.id,
+                            friendId: friend[0].id,
+                        }),
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                    })
+                    window.location.reload()
+                }
             })
-            var friend = users.filter((user) => username == user.user.username)
-            if (friend.length == 0) {
-                setUserNameError('Пользователь не найден')
-                event.preventDefault()
-            } else {
-                ajaxService(`/friends/`, {
-                    method: 'POST',
-                    body: JSON.stringify({
-                        userId: user.id,
-                        friendId: friend[0].id,
-                    }),
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                })
-                window.location.reload()
-            }
         }
     }
 
