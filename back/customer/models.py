@@ -11,7 +11,7 @@ class Customer(models.Model):
                               default='/Customers/logo192.png')
 
     def __str__(self) -> str:
-        return self.user.__str__()  # self.user #self.name + self.lastname
+        return self.user.__str__()
 
     @receiver(post_save, sender=User)
     def create_user_profile(sender, instance, created, **kwargs):
