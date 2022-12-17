@@ -6,10 +6,7 @@ from django.core.exceptions import ObjectDoesNotExist
 
 
 class Customer(models.Model):
-    #user = models.ForeignKey(User,unique=True, on_delete=models.CASCADE)
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    # name = models.TextField()
-    # lastname = models.TextField()
     image = models.ImageField(upload_to="Customers",
                               default='/Customers/logo192.png')
 
@@ -22,10 +19,6 @@ class Customer(models.Model):
             Customer.objects.create(user=instance)
         else:
             instance.customer.save()
-        # try:
-        #     instance.customer.save()
-        # except (ObjectDoesNotExist):
-        #     Customer.objects.create(user=instance)
 
     @receiver(post_save, sender=User)
     def save_user_profile(sender, instance, **kwargs):
