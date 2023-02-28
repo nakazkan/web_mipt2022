@@ -1,0 +1,65 @@
+.friends_aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.friend {
+    float: right;
+    font-weight: bold;
+    font-size: 150%;
+    color: black;
+    background-color: white;
+    width: 550px;
+    margin-top: 20px;
+    right: 0;
+    border-radius: 3px;
+}
+
+.text {
+    padding-left: 10vh;
+    padding-top: 2.5vh;
+}
+
+.image {
+    float: left;
+    width: 7vh;
+    height: 8vh;
+    border-radius: 3px 0 0 3px;
+}
+
+.settings-aside {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.settings-aside div {
+    line-height: 3em;
+    font-size: 140%;
+    font-weight: bold;
+}
+
+.settings_button {
+    color: black;
+    margin-left: 20px;
+    font-size: 140%;
+    background-color: white;
+    border: black;
+    position: absolute;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.settings_input {
+    font-size: 140%;
+    color: black;
+    outline: 0;
+    border: 0;
+}
+
+.settings_error {
+    text-align: center;
+    font-size: 140%;
+    color: #194d6a;
+}
