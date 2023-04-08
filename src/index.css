@@ -1,0 +1,102 @@
+body{
+    background-color: #E4E4E7;
+    margin: 0;
+
+}
+
+a{
+  text-decoration: none;
+}
+
+.main_header{
+    font:Arial;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    height: 60px;
+    background-color: #194D6A;   
+}
+
+.header_element{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    margin-right:10%;
+    color : white;
+    background-color: #194D6A;
+}
+
+.logo{
+    position: absolute;
+    margin: 0 0 0 60px;
+    width: 200px;
+    height: 60px;
+    background:url('./images/Логотип_некой_компании.jpg');
+    background-repeat: no-repeat;
+    background-size:contain;
+}
+
+.header_element button{
+    background-color: #194D6A;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 150%;
+}
+
+#user{
+    margin-right:0;
+}
+
+.dropdown {
+  display:grid;
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+}
+
+.dropdown-content a {
+  background-color: #194D6A;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 130%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.dropdown-content a:hover {background-color: #194D6A;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.blog_aside{
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1300px;
+    background-color: E4E4E7;
+}
+
+.blog{
+    height: auto;
+    background-color: white;
+    border-radius: 2px;
+ 
+}
+.blog h1{
+    font-size: 160%;
+    white-space: nowrap;
+    padding: 20px 0 0 20px;
+    color: black;
+}
+
+.blog p{
+    position: relative;
+    font-size: 140%;
+    padding: 0 60px 30px 60px ;
+    color: black;
+}
