@@ -1,0 +1,11 @@
+.user div {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.user_item {
+    font-size: 140%;
+    font-weight: bold;
+    margin: 10px;
+}

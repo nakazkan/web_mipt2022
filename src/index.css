@@ -1,0 +1,200 @@
+body {
+    background-color: #e4e4e7;
+    margin: 0;
+    font-family: Helvetica;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main_header {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    height: 60px;
+    background-color: #194d6a;
+}
+
+.header_element {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    margin-right: 10%;
+    color: white;
+    background-color: #194d6a;
+}
+
+.logo {
+    position: absolute;
+    margin: 0 0 0 60px;
+    width: 200px;
+    height: 60px;
+    background: url('./images/Логотип_некой_компании.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.header_element button {
+    font-family: Helvetica;
+    font-weight: bold;
+    background-color: #194d6a;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 150%;
+}
+
+#user {
+    margin-right: 0;
+}
+
+.dropdown {
+    display: grid;
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.dropdown-content a {
+    background-color: #194d6a;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 130%;
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.blog_aside {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1300px;
+    background-color: E4E4E7;
+}
+
+.blog {
+    margin-top: -10px;
+    height: auto;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.blog h1 {
+    font-size: 160%;
+    white-space: nowrap;
+    padding: 20px 0 0 20px;
+    color: black;
+}
+
+.blog p {
+    letter-spacing: 2px;
+    position: relative;
+    font-size: 140%;
+    padding: 0 60px 30px 60px;
+    color: black;
+}
+
+.create_blog_aside {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    background-color: white;
+    border-radius: 2px;
+}
+
+.title {
+    margin: 10px 0 0 20px;
+    font-size: 200%;
+    width: 95%;
+    color: black;
+    outline: 0;
+    border: 0;
+}
+
+.description {
+    font-size: 140%;
+    margin: 10px 10px 10px 60px;
+    line-height: 1.5;
+    outline: 0;
+    border: 0;
+    width: 95%;
+    overflow-y: auto;
+    height: 70vh;
+    resize: none;
+}
+
+.create_blog {
+    color: black;
+    margin-top: 20px;
+    font-size: 120%;
+    background-color: white;
+    border: black;
+    position: absolute;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.create_blog:hover {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.edit_blog {
+    margin-bottom: -10px;
+    font: Arial;
+    color: black;
+    margin-top: 20px;
+    padding: 3px;
+    font-size: 130%;
+    background-color: white;
+    border: black;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.edit_blog:hover {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#delete {
+    margin-left: 20px;
+}
+
+.titleError {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+    font-size: 140%;
+    color: #194d6a;
+}
+
+.line {
+    border: none;
+    background-color: rgb(24, 24, 131);
+
+    height: 1px;
+    margin: 0;
+}
+
+.blog_item_aside {
+    margin-bottom: 30px;
+}
+
+.deleteOrEditBlog {
+    display: flex;
+    justify-content: space-between;
+}
+
+.delete_confirm {
+    position: absolute;
+    top: -40px;
+}
+

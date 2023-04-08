@@ -1,0 +1,15 @@
+.friends_aside {
+    margin-top: 40px;
+    margin-left: 200px;
+    background-color: E4E4E7;
+}
+
+.friend {
+    padding: 5px;
+    font-weight: bold;
+    font-size: 140%;
+    color: black;
+    margin-top: 40px;
+    background-color: white;
+    border-radius: 2px;
+}
